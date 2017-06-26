@@ -1,17 +1,29 @@
+<?php
+function _construct($make_model, $price, $image_path, $miles);
+{
+      $this->model = $make_model;
+      $this->price = $price;
+      $this->image = $image_path;
+      $this->miles = $miles;
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <title>Make a rectangle!</title>
+    <title>Buy a car</title>
 </head>
 <body>
     <div class="container">
     <?php
-        if ($my_rectangle->isSquare()) {
-            echo "<h1>Congratulations! You made a square!</h1>";
-        } else {
-            echo "<h1>Sorry! This isn't a square.</h1>";
-        }
+        foreach ($cars_matching_search as $car) {
+            echo "<li> $car->make_model </li>";
+            echo "<ul>";
+                echo "<li> $$car->price </li>";
+                echo "<li> Miles: $car->miles </li>";
+            echo "</ul>";
     ?>
     </div>
 </body>
