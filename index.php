@@ -7,7 +7,6 @@
         private $image_path;
         private $miles;
 
-
     function __construct($make_model, $price, $image_path, $miles)
     {
         $this->model = $make_model;
@@ -16,22 +15,7 @@
         $this->miles = $miles;
 
       }
-    function setMake_model()
-    {
-         $this->model = $make_model;
-    }
-    function setPrice()
-    {
-        return $this->price;
-    }
-    function setImage()
-    {
-        return $this->image;
-    }
-    function setMiles()
-    {
-        return $this->miles;
-    }
+
     function getMake_model()
     {
         return $this->make_model;
