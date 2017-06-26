@@ -7,6 +7,7 @@
         private $image_path;
         private $miles;
 
+
     function __construct($make_model, $price, $image_path, $miles)
     {
         $this->model = $make_model;
@@ -42,13 +43,16 @@
     $fifth_car = new Car("datsun", 900, "img/datsun.jpg", 289000);
     $sixth_car = new Car("pinto", 600, "img/pinto.jpg", 450000);
 $cars = array($first_car, $second_car, $third_car, $fourth_car, $fifth_car, $sixth_car);
-
 $cars_matching_search = array();
     foreach ($cars as $car) {
         if (($car->getPrice() <= $_GET["price"]) && ($car->getMiles() <= $_GET["miles"])) {
         array_push($cars_matching_search, $car);
         }
-}
+    }
+    if (empty($cars_matching_search)) {
+        echo "<body id='feet'>Please start walking</body>";
+        // echo "<img src=img/walk.jpg>";
+    }
 ?>
 
 
@@ -56,6 +60,7 @@ $cars_matching_search = array();
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Buy a car</title>
 </head>
 <body>

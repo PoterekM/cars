@@ -1,4 +1,4 @@
-body {
+#lemon {
     background-image: url("../css/lot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,4 +6,12 @@ body {
     font-size: 28px;
     text-shadow: white 2px 2px;
     /*background-color: salmon;*/
+}
+
+#feet {
+    background-image: url("../img/walk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 48px;
+    text-align: center;
 }
