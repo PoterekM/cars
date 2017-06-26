@@ -1,5 +1,9 @@
 body {
-    background-image: url("img/lot.jpg");
+    background-image: url("../css/lot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: teal;
+    font-size: 28px;
+    text-shadow: white 2px 2px;
+    /*background-color: salmon;*/
 }

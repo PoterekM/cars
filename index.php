@@ -38,8 +38,10 @@
     $first_car = new Car("accord", 700, "img/accord.jpeg", 165098);
     $second_car = new Car("volvo", 1200, "img/volvo.jpeg", 198345);
     $third_car = new Car("vw", 350, "img/vw_büs.jpg", 199097);
-
-$cars = array($first_car, $second_car, $third_car);
+    $fourth_car = new Car("gremlin", 125, "img/gremlin.jpg", 29998990);
+    $fifth_car = new Car("datsun", 900, "img/datsun.jpg", 289289);
+    $sixth_car = new Car("pinto", 600, "img/pinto.jpg", 400000);
+$cars = array($first_car, $second_car, $third_car, $fourth_car, $fifth_car, $sixth_car);
 
 $cars_matching_search = array();
     foreach ($cars as $car) {
